@@ -1,0 +1,44 @@
+* {
+	font-family: Arial;
+}
+
+.headerLogo {
+	background-color: #483d8b;
+	height: 150px;
+	width: 30%;
+	float: left;
+}
+
+.headerTresc {
+	background-color: #483d8b;
+	color: white;
+	height: 150px;
+	width: 70%;
+	float: left;
+}
+
+main {
+	float: left;
+}
+
+.blok {
+	background-color: #afeeee;
+	width: 150px;
+	height: 100px;
+	margin: 3px;
+	padding: 3px;
+	border: black 1px solid;
+	float: left;
+}
+
+footer {
+	background-color: #483d8b;
+	color: white;
+	padding: 10px;
+	float: left;
+	width: 100%;
+}
+
+h5 {
+	text-align: center;
+}
