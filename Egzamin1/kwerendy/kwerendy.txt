@@ -1,0 +1,11 @@
+Kwerenda 1: wybierającą jedynie cenę niebieskiej puszki farby
+SELECT * FROM `farby` WHERE kolor="niebieski";
+
+
+Kwerenda 2: wybierającą jedynie nazwę koloru oraz cenę jednego litra farby obliczoną 
+za pomocą pól cena i pojemnosc dla wszystkich wierszy tabeli farby
+SELECT kolor, cena/pojemnosc AS cena FROM `farby`;
+
+
+Kwerenda 3: wybierającą jedynie nazwy kolorów farb dla pomieszczenia 3
+SELECT kolor FROM `farby` INNER JOIN `malowanie` ON farby.id_farby = malowanie.id_farby WHERE id_pomieszczenia = 3; 
