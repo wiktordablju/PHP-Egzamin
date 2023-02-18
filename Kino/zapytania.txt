@@ -1,0 +1,21 @@
+Zapytanie 1: wybierające daty i godziny wszystkich seansów (bez powtórzeń)
+
+SELECT DISTINCT data, Godzina FROM `rezerwacje`;
+
+
+Zapytanie 2: wybierające wyłącznie numery rzędów i miejsc zarezerwowanych na seans
+w dniu 2022-08-09 o godzinie 18:00
+
+SELECT rzad, miejsce FROM rezerwacje WHERE Data = "2022-08-09" and Godzina = "18:00";
+
+
+
+Zapytanie 3: zliczające ilość miejsc zarezerwowanych na seans w dniu 2022-08-09
+o godzinie 18:00
+
+
+Zapytanie 4: wybierające wyłącznie numery rzędów i miejsc oraz datę i godzinę rezerwacji
+wykonanych przez kasjera o nazwisku i imieniu Bednarski Jan. Należy posłużyć się
+relacją.
+
+SELECT rzad, miejsce, data, godzina from rezerwacje, kasjerzy where rezerwacje.id=kasjerzy.id and kasjerzy.nazwisko = "Bednarski" and kasjerzy.imie = "Jan";
