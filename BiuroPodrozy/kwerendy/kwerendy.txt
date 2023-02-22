@@ -1,0 +1,14 @@
+Zapytanie 1: wybierajace jedynie pola id,datawyjazdu,cel i cena z tabeli wycieczki dla dostepnych wycieczek
+SELECT id, datawyjazdu, cel, cena FROM wycieczki WHERE dostepna="1";
+
+Zapytanie 2
+Wybierajace jedynie pola nazwapliku i podpis z tabeli zdjecia, sortujac je rosnaco alfabetycznie wedlug kolumny podpis
+SELECT nazwapliku, podpis FROM zdjecia ORDER BY podpis ASC;
+
+Zapytanie 3
+Wykorzystujace relacje i wybierajace jedynie pola nazwapliku i cel zwiazny ze zdjeciem z tabel zdjecia i wycieczki, dla wycieczek, ktorych cena jest wyzsza niz 1000zl
+SELECT nazwaPliku, cel FROM zdjecia INNER JOIN wycieczki ON zdjecia.id = wycieczki.zdjecia_id WHERE cena > 1000;
+
+Zapytanie 4
+Dodajace do tabeli wycieczki pola dataprzyjazdu typu data, pole powinno byc wstawione po polu datawyjazdu
+ALTER TABLE wycieczki ADD dataPrzyjazdu DATE AFTER dataWyjazdu;
