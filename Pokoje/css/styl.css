@@ -1,0 +1,75 @@
+header,
+.banertwo,
+footer {
+	background-color: #000033;
+	color: white;
+	float: left;
+	width: 100%;
+}
+
+header {
+	height: 80px;
+	font-family: Arial;
+	padding-top: 10px;
+	float: left;
+}
+
+.banertwo {
+	height: 20px;
+	float: left;
+}
+
+.menuone,
+.menuthree {
+	background-color: #e0e9f1;
+	height: 40px;
+	padding-top: 10px;
+	width: 33%;
+	float: left;
+}
+.menutwo {
+	background-color: #b3c6d9;
+	height: 40px;
+	width: 34%;
+	padding-top: 10px;
+	float: left;
+}
+
+.panellewy,
+.panelprawy {
+	background-color: #b3c6d9;
+	width: 33%;
+	height: 400px;
+	padding-top: 100px;
+	float: left;
+}
+
+.panelsrodkowy {
+	background-color: #e0e9f1;
+	width: 34%;
+	height: 400px;
+	padding-top: 100px;
+	float: left;
+}
+
+footer {
+	font-family: arial;
+	height: 80px;
+	float: left;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+* {
+	text-align: center;
+	font-size: 20px;
+}
+
+table,
+tr,
+td {
+	border: 1px black solid;
+}
