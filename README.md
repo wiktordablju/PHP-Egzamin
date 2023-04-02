@@ -1,4 +1,3 @@
-# SzkolaPHP
-## ALL OF THIS IS IN POLISH
-  Wszystkie rzeczy robione w szkole/do egzaminu z **PHP**  
-  **Nie wszystkie praktyki używane w tych kodach są dobre, wszystko robione by wpasować się w klucz egzaminu**
+# PHP - Szkoła
+
+Zadania w PHP robione w szkole na lekcjach Specjalizacja (I i II semestr) oraz PAI (II semestr). Głównie są tu zadania egzaminacyjne (stąd często archaiczny sposób wykonywania tych zadań)
