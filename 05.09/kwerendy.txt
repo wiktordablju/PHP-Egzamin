@@ -1,0 +1,10 @@
+1. SELECT imie, nazwisko FROM pracownik
+2. SELECT COUNT(*) as liczba_pracownikow from pracownik 
+3. SELECT imie, nazwisko, stanowisko FROM pracownik WHERE stanowisko LIKE 'wiceprezes%'
+4. SELECT nazwa, COUNT(*) AS ile_jest_dzialow FROM dzial GROUP BY nazwa
+5. SELECT nazwa FROM klient WHERE kraj = 'USA';
+6. SELECT produkt.id, produkt.nazwa, stan_magazynowy.ilosc_w_magazynie FROM produkt INNER JOIN stan_magazynowy ON produkt.id = stan_magazynowy.produkt_id ORDER BY stan_magazynowy.ilosc_w_magazynie DESC LIMIT 5;
+7. SELECT nazwa, sugerowana_cena AS najdrozszy FROM produkt ORDER BY sugerowana_cena DESC LIMIT 1;
+8. SELECT klient.nazwa, zamowienie.typ_zaplaty FROM zamowienie INNER JOIN klient ON zamowienie.klient_id = klient.id WHERE zamowienie.typ_zaplaty = 'KREDYT';
+9. SELECT klient.nazwa as klient, region.nazwa as kraj FROM region INNER JOIN klient ON region.id = klient.region_id WHERE region.nazwa='Afryka';
+10. SELECT produkt.nazwa, pozycja.ilosc_sprzedana FROM produkt INNER JOIN pozycja ON produkt.id = pozycja.produkt_id ORDER BY pozycja.ilosc_sprzedana ASC LIMIT 4
