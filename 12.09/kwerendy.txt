@@ -1,0 +1,4 @@
+1. SELECT klient.nazwa, pracownik.nazwisko, pracownik.stanowisko FROM klient INNER JOIN pracownik ON klient.pracownik_id = pracownik.id ORDER BY pracownik.nazwisko ASC;
+2. SELECT ocena_kredytowa, COUNT(*) as 'ZDOLNOŚĆ KREDYTOWA' FROM klient GROUP BY ocena_kredytowa;
+3. SELECT produkt.nazwa, pozycja.ilosc_sprzedana FROM produkt INNER JOIN pozycja ON produkt.id = pozycja.produkt_id ORDER BY pozycja.ilosc_sprzedana DESC LIMIT 5;
+4. SELECT klient.nazwa, zamowienie.typ_zaplaty FROM klient INNER JOIN zamowienie ON klient.id = zamowienie.klient_id WHERE zamowienie.typ_zaplaty = 'GOTOWKA' AND klient.nazwa LIKE 'O%';
