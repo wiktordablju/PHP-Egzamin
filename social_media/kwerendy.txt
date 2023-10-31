@@ -1,0 +1,11 @@
+Zapytanie 1:
+SELECT imie, nazwisko, opis, zdjecie FROM osoby WHERE Hobby_id = 1 OR Hobby_id = 2 or Hobby_id = 6;
+
+Zapytanie 2:
+SELECT osoby.id, nazwisko, nazwa FROM osoby INNER JOIN hobby ON osoby.osoby_id = hobby.id WHERE rok_urodzenia > 2000;
+
+Zapytanie 3:
+SELECT id, zdjecie FROM osoby WHERE imie = "Monika" LIMIT 5;
+
+Zapytanie 4:
+CREATE TABLE wpisy (id INT AUTO_INCREMENT PRIMARY KEY, wpis TEXT, uzytkownik_id INT NOT NULL);
